@@ -27,12 +27,12 @@ public class AbonnementController {
     public Set<Abvonnement> getSubscriptionByType(TypeAbonnement type){
         return abonnementService.getSubscriptionByType(type);
     }
-    @PostMapping("/Abonnements/ByDate/{startDate} {endDate}")
+/*    @PostMapping("/Abonnements/ByDate/{startDate} {endDate}")
     public List<Abvonnement> retrieveSubscriptionsByDates(@PathVariable("startDate")  String startDate,@PathVariable("endDate") String endDate){
         DateTimeFormatter dateTimeFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate start = dateTimeFormat.parse(startDate, LocalDate::from);
         LocalDate end = dateTimeFormat.parse(endDate, LocalDate::from);
         return  abonnementService.retrieveSubscriptionsByDates(start,end);
-    }
+    }*/
 
 }
